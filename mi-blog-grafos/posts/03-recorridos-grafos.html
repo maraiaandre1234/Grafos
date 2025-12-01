@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos Fundamentales de Recorrido - Grafos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Algoritmos Fundamentales de Recorrido</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../about.html">Acerca de</a>
+            <a href="01-introduccion-grafos.html">Introducción</a>
+            <a href="02-representacion-grafos.html">Representación</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Búsqueda en Amplitud (BFS)</h2>
+            <p>Es un algoritmo para recorrer grafos. Funciona por niveles, visitando primero todos los vecinos del nodo inicial antes de pasar a sus "nietos".<br>
+                 Utiliza una Cola (Queue) para mantener el orden de exploración, garantizando el principio FIFO (Primero en Entrar, Primero en Salir).<br> 
+                 Esto asegura que siempre encuentra el camino más corto (en términos de número de pasos o aristas) en grafos sin pesos. Para evitar ciclos y repeticiones, se mantiene un registro de los nodos visitados. 
+                 Es fundamental para encontrar rutas mínimas en redes y para el rastreo sistemático.</p>
+            <h3>Ejemplo de BFS</h3>
+            <p>Consideremos el siguiente grafo:</p>
+            <img src="../images/grafo-bfs.png" alt="Grafo para BFS"  class="center-img">
+            <p>El recorrido BFS comenzaría en el nodo A, visitando los nodos B y C antes de pasar a D y E.</p>
+
+            <h2>Búsqueda en Profundidad (DFS)</h2>
+            <p>La Búsqueda en Profundidad (DFS) es un algoritmo para recorrer grafos y árboles. A diferencia de BFS, DFS explora tan lejos como es posible a lo largo de cada rama antes de retroceder (backtracking).<br> 
+               Utiliza una Pila (Stack) para su implementación, la cual sigue el principio LIFO (Último en Entrar, Primero en Salir). Se introduce el nodo de inicio, y luego el algoritmo se mueve a un vecino no visitado, repitiendo el proceso recursivamente hasta que no puede ir más lejos. Luego, retrocede y explora otras ramas. Se utiliza comúnmente para la detección de ciclos, para encontrar componentes conectados y en problemas de laberintos.<br>
+               A diferencia de BFS, DFS no garantiza encontrar el camino más corto.</p>
+            <h3>Ejemplo de DFS</h3>
+            <p>Usando el mismo grafo anterior:</p>
+            <img src="../images/grafo-dfs.png" alt="Grafo para DFS" class="center-img">
+            <p>El recorrido DFS comenzaría en el nodo A, explorando primero el nodo B y luego D antes de retroceder y explorar C.</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mi Blog de Grafos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

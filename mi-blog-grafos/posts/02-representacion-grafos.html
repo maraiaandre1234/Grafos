@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representación de Grafos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Representación de Grafos</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../about.html">Acerca de</a>
+            <a href="01-introduccion-grafos.html">Introducción</a>
+            <a href="03-recorridos-grafos.html">Recorridos</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Formas de Representar un Grafo</h2>
+            <p>La lista de adyacencia representa el grafo mediante listas.
+               Cada nodo del grafo tiene asociada una lista que contiene todos los nodos con los que está conectado.<br>
+               Esta forma es especialmente útil cuando el grafo tiene pocas aristas en comparación con la cantidad total de nodos (grafos dispersos), ya que solo se almacenan las conexiones existentes.</p>
+            
+            <h3>1. Lista de Adyacencia</h3>
+            <p>La lista de adyacencia representa el grafo mediante listas.<br>
+               Cada nodo del grafo tiene asociada una lista que contiene todos los nodos con los que está conectado.<br>
+
+               Esta forma es especialmente útil cuando el grafo tiene pocas aristas en comparación con la cantidad total de nodos (grafos dispersos), ya que solo se almacenan las conexiones existentes.</p>
+
+            <h2>Ventajas:</h2>
+            <p>Ocupa poco espacio.<br>
+
+               Fácil de recorrer con algoritmos como BFS y DFS.<br>
+
+               Ideal para grafos grandes y dispersos.</p>
+
+            <h2>Desventajas:</h2>
+            <p>Consultar si existe una arista entre dos nodos puede ser más lento.</p>
+
+            
+            <h2> Ejemplo:</h2>
+            <p>Supongamos un grafo con conexiones:A–B, A–C, B–D.<br>
+                La representación sería:
+            </p>
+
+            <pre>
+            A: B -> C
+            B: A -> D
+            C: A
+            D: B
+            </pre>
+
+            <h3>2. Matriz de Adyacencia</h3>
+            <p>La matriz de adyacencia usa una matriz cuadrada en la que filas y columnas representan nodos.
+               Cada posición (i, j) indica si existe una arista entre el nodo i y el nodo j.<br>
+
+               Se usa un 1 para indicar que existe conexión y un 0 para indicar que no hay conexión.<br>
+
+               Esta representación es muy útil cuando se necesita consultar rápidamente si dos nodos están conectados, o cuando el grafo es denso (muchas aristas).</p>
+
+            <h2>Ventajas:</h2>
+            <p>Permite consultar si existe una arista en tiempo constante O(1).<br>
+
+              Es más simple desde el punto de vista matemático.</p>
+
+            <h2>Desventajas:</h2>
+            <p>Consume mucho espacio: siempre es de tamaño n × n, incluso si hay pocas aristas.</p>
+
+            
+            <h2> Ejemplo:</h2>
+            <p>Para el mismo grafo: A–B, A–C, B–D.<br>
+                
+               La matriz de adyacencia sería:</p>
+
+
+            <pre>
+            |   | A | B | C | D |
+            |---|---|---|---|---|
+            | A | 0 | 1 | 1 | 0 |
+            | B | 1 | 0 | 0 | 1 |
+            | C | 1 | 0 | 0 | 0 |
+            | D | 0 | 1 | 0 | 0 |
+            </pre>
+
+            <p>A continuación se muestra un grafo simple representado de ambas maneras:</p>
+            <img src="../images/formas_grafo-ejemplo.png" alt="Ejemplo de Grafo" class="center-img">
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mi Blog de Grafos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

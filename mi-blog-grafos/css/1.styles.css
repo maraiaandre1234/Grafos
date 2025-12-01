@@ -1,0 +1,109 @@
+/* Fuente y ajustes generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background: #ffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado con tonos grises */
+header {
+    padding: 25px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #35424a, #f2f2f2);
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #222;
+    letter-spacing: 0.5px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Botones del menú con transición */
+nav a {
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: #e5e5e5;
+    color: #222;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    border: 1px solid #d4d4d4;
+}
+
+nav a:hover {
+    background: #9396a1;
+    color: #fff;
+    border-color: #9396a1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+/* Contenido principal */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Artículos */
+article {
+    border: 1px solid #e5e5e5;
+    padding: 22px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background: #ffffff;
+    transition: 0.3s ease;
+}
+
+article:hover {
+    box-shadow: 0 8px 26px rgba(0,0,0,0.06);
+    border-color: #cccccc;
+}
+
+article h3 {
+    margin-top: 0;
+    font-size: 1.35rem;
+}
+
+article h3 a {
+    text-decoration: none;
+    color: #222;
+    transition: 0.25s;
+}
+
+article h3 a:hover {
+    color: #4a6cff;
+}
+
+/* Footer con el estilo del encabezado */
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #fff;
+    border-top: 1px solid #ccc;
+    background: linear-gradient(135deg, #35424a, #f2f2f2);
+}

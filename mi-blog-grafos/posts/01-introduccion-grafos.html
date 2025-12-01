@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a los Grafos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Introducción a los Grafos</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../about.html">Acerca de</a></li>
+                <li><a href="02-representacion-grafos.html">Siguiente: Representación de Grafos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Definición de un Grafo</h2>
+            <p>Un grafo es una estructura de datos formada por un conjunto de nodos o vértices y un conjunto de aristas que representan las conexiones o relaciones entre esos nodos. Permite modelar y analizar sistemas donde los elementos están vinculados entre sí, como redes, rutas, dependencias o interacciones.</p>
+            
+            <h3>Conceptos Clave</h3>
+            <ul>
+                <li><strong>Nodos (Vértices):</strong> Son los puntos que representan entidades en el grafo.</li>
+                <li><strong>Aristas (Ejes):</strong> Son las conexiones entre los nodos que representan relaciones.</li><br>
+                  <img src="../images/1_grafo.png" alt="Diagrama de grafo" class="center-img">
+            </ul><br>
+
+            <h3>Tipos de Grafos</h3>
+            <ul>
+                <li><strong>Grafo NO Dirigido:</strong> Las aristas tienen dirección, representada con flechas. La relación va de un nodo a otro, y no necesariamente en ambos sentidos.</li>
+                <li><strong>Grafo Dirigido:</strong> Las aristas no tienen dirección, por lo que la relación es bidireccional: si A está conectado con B, B también lo está con A.</li>
+                <li><strong>Grafo No Simple:</strong> Son grafos que permiten la existencia de lazos (aristas que conectan un nodo consigo mismo) y aristas múltiples entre el mismo par de nodos. No tienen las restricciones de un grafo simple.</li>
+                <li><strong>Grafo Ponderado:</strong> Las aristas tienen un peso o costo, que puede representar distancia, tiempo, capacidad, afinidad u otra medida relevante para el problema.</li>
+                <li><strong>Grafo Completo:</strong> Son grafos en los que cada nodo está conectado con todos los demás. No falta ninguna arista posible. En un grafo completo de n nodos, existen exactamente n(n−1)/2 aristas si es no dirigido.</li>
+                <li><strong>Grafo De Similitud</strong> Son grafos donde las aristas representan un grado de similitud entre elementos (nodos). Normalmente son ponderados, y un peso mayor indica mayor similitud entre los nodos conectados.</li>
+            </ul><br>
+
+            <img src="../images/grafo-ejemplo.png" alt="Tipos de grafos" class="center-img">
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mi Blog de Grafos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
